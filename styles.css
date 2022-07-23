@@ -1,18 +1,33 @@
+body {
+    width: 860px;
+}
+
+
 .wrap {
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 100px;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    
+    overflow-x: hidden;
+    padding-top: 10px;
+    height: 400px;
+    background-color: antiquewhite;
     
     
 }
 
-.butt {
+.btn__wrap {
+    background-color: aqua;
     
+    padding: 1rem;
+    padding-left: 20rem;
+   
     
 }
 
 .zipper {
+
+    
     width:  200px;
     height: 200px;
     
