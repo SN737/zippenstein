@@ -1,0 +1,20 @@
+.wrap {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    
+    
+}
+
+.butt {
+    
+    
+}
+
+.zipper {
+    width:  200px;
+    height: 200px;
+    
+    background-image: url("./zippenstein.jpg");
+}
