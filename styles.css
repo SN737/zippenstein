@@ -9,17 +9,9 @@ body {
 .wrap {
     display:flex;
     flex-wrap: wrap;
-    
-    /* justify-content:space-around; */
-    /* overflow-x: visible; */
-    /* padding-top: 10px; */
     height: 480px;
     opacity: 0;
     
-    
-    
-    
- 
 }
 
 .ctrl__wrapper {
@@ -34,14 +26,12 @@ body {
     display: flex;
     width: max-content;
     padding-bottom: 3px;
-    /* justify-content: space-between;      */
-    /* margin-left: 5vw; */
-    
+     
  }
  
  .wrap-clean { 
     display: flex;
-    /* margin-left: 5vw; */
+   
     justify-content: center;
     
     padding: 5px;
@@ -54,32 +44,30 @@ body {
 
 .zipper {
     align-self: flex-start;
- 
     width:  180px;
-    height: 200px;
+    height: 180px;
     background-image: url("./zippenstein.jpg");
 }
 
-/* .zipper:hover{
+.img__content:hover{
     
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-} */
+    transform: rotate3d(0, 0, 1, 4deg);
+    transition: 0.5s;
+}
 
 .keshenator {
 
-    width:  180px;
-    height: 200px;
-    padding-left: -10px;
-    
-    
+    width:  178px;
+    height: 180px;
     background-image: url("./kesha.jpg");
+    /* background-image: url("./kesha.png"); */
+
     
 }
 
 .currentScreen {
     opacity: 1;
-       
-}
+  }
 
 button {
     margin-left: 5px;

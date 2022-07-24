@@ -5,14 +5,14 @@ let pushKesh = document.querySelector('.btn__kesha');
 pushZippen.addEventListener('click', () => {
     wrap1.classList.add ('currentScreen');
     let zipp = document.createElement('div');
-    zipp.classList.add('zipper');
+    zipp.classList.add('zipper', 'img__content');
     wrap1.append(zipp);
 });
 
 pushKesh.addEventListener('click', () => {
     wrap1.classList.add ('currentScreen');
     let kesh = document.createElement('div');
-    kesh.classList.add('keshenator');
+    kesh.classList.add('keshenator', 'img__content');
     wrap1.append(kesh);
 });
 
