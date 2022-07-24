@@ -1,5 +1,6 @@
 body {
-    width: 860px;
+    /* width: 860px; */
+    padding: 0 calc(50% - 690px);
    
 }
 
@@ -21,13 +22,13 @@ body {
     display: flex;
     width: max-content;
     justify-content: space-between;     
-    margin-left: 10rem;
+    margin-left: 5vw;
     
  }
  
  .wrap-clean { 
     display: flex;
-    margin-left: 10rem;
+    margin-left: 5vw;
     justify-content: center;
     padding-top: 10px;
     width: 14rem;
