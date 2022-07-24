@@ -2,6 +2,7 @@ body {
     /* width: 860px; */
     /* padding: 0 calc(50% - 699px); */
     margin: 0 auto;
+    
    
 }
 
@@ -11,7 +12,7 @@ body {
     
     /* justify-content:space-around; */
     /* overflow-x: visible; */
-    padding-top: 10px;
+    /* padding-top: 10px; */
     height: 480px;
     opacity: 0;
     
@@ -45,8 +46,8 @@ body {
     
     padding: 5px;
     width: 60vw;
-    background-color: rgb(213, 188, 236);
-    /* background-color: rgb(177, 109, 241); */
+    /* background-color: rgb(213, 188, 236); */
+    background-color: rgb(55, 163, 231);
     border-radius: 20px;
     
 }
@@ -57,6 +58,11 @@ body {
     height: 200px;
     background-image: url("./zippenstein.jpg");
 }
+
+/* .zipper:hover{
+    
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
 
 .keshenator {
 
