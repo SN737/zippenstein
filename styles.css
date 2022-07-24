@@ -21,13 +21,13 @@ body {
     display: flex;
     width: max-content;
     justify-content: space-between;     
-    margin-left: 20rem;
+    margin-left: 10rem;
     
  }
  
  .wrap-clean { 
     display: flex;
-    margin-left: 20rem;
+    margin-left: 10rem;
     justify-content: center;
     padding-top: 10px;
     width: 14rem;
