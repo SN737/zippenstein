@@ -1,35 +1,72 @@
 body {
     width: 860px;
+   
 }
-
 
 .wrap {
     display:flex;
     flex-wrap: wrap;
-    justify-content:space-between ;
-    
+    justify-content:space-around;
     overflow-x: hidden;
     padding-top: 10px;
     height: 400px;
+    opacity: 0;
     
     
     
+ 
 }
 
 .btn__wrap {
-   
+    display: flex;
+    width: max-content;
+    justify-content: space-between;     
+    margin-left: 20rem;
     
-    padding: 1rem;
-    padding-left: 20rem;
-   
+ }
+ 
+ .wrap-clean { 
+    display: flex;
+    margin-left: 20rem;
+    justify-content: center;
+    padding-top: 10px;
+    width: 14rem;
     
 }
 
 .zipper {
+ 
+    width:  200px;
+    height: 200px;
+    background-image: url("./zippenstein.jpg");
+}
 
-    
+.keshenator {
+
     width:  200px;
     height: 200px;
     
-    background-image: url("./zippenstein.jpg");
+    background-image: url("./kesha.jpg");
+    
+}
+
+.currentScreen {
+    opacity: 1;
+       
+}
+
+button {
+    margin-left: 5px;
+    width: 7rem;
+}
+button:hover{
+    border: 1px solid rgb(62, 102, 62);
+    transition: 0.32s;
+    /* background-color:transparent; */
+    background-color: rgb(188, 247, 166);
+}
+
+.btn__reset:hover{
+    background-color: rgb(247, 166, 166);
+
 }

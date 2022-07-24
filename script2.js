@@ -1,11 +1,33 @@
-
-let push = document.querySelector('.butt');
+let pushZippen = document.querySelector('.btn__zipp');
 let wrap1 = document.querySelector('.wrap');
+let pushKesh = document.querySelector('.btn__kesha');
 
-
-push.addEventListener('click', () => {
-    console.log(';eukmbt ');
-    const zipp = document.createElement('div');
+pushZippen.addEventListener('click', () => {
+    wrap1.classList.add ('currentScreen');
+    let zipp = document.createElement('div');
     zipp.classList.add('zipper');
     wrap1.append(zipp);
-})
+});
+
+pushKesh.addEventListener('click', () => {
+    wrap1.classList.add ('currentScreen');
+    let kesh = document.createElement('div');
+    kesh.classList.add('keshenator');
+    wrap1.append(kesh);
+});
+
+const btnReset = document.querySelector('.btn__reset');
+//btnReset.addEventListener('click', console.log("очистка"));
+btnReset.addEventListener('click', () => {
+    resetScreen();
+});
+
+function resetScreen() {
+   const wrap = document.querySelector('.wrap');
+   while (wrap.firstChild) {
+   wrap.removeChild(wrap.firstChild);
+   }
+    //wrap1.classList.remove ('currentScreen');
+}
+ 
+
