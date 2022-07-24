@@ -41,9 +41,10 @@ body {
     /* margin-left: 5vw; */
     justify-content: center;
     
-    padding-top: 10px;
+    padding: 5px;
     width: 60vw;
     background-color: rgb(213, 188, 236);
+    border-radius: 20px;
     
 }
 
