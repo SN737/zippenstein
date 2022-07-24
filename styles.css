@@ -11,6 +11,7 @@ body {
     flex-wrap: wrap;
     height: 480px;
     opacity: 0;
+    /* background-color: aquamarine; */
     
 }
 
@@ -46,7 +47,7 @@ body {
     align-self: flex-start;
     width:  180px;
     height: 180px;
-    background-image: url("./zippenstein.jpg");
+    background-image: url("./img/zippenstein.jpg");
 }
 
 .img__content:hover{
@@ -59,10 +60,18 @@ body {
 
     width:  178px;
     height: 180px;
-    background-image: url("./kesha.jpg");
-    /* background-image: url("./kesha.png"); */
+    background-image: url("./img/kesha.jpg");
+    /* background-image: url("./kesha.png");*/
+    background-repeat: no-repeat; 
+}
 
+.tuschka{
+    width:  178px;
+    height: 180px;
+    background-image: url("./img/tuchka.png");
+    background-repeat: no-repeat; 
     
+
 }
 
 .currentScreen {

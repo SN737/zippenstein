@@ -1,6 +1,14 @@
 let pushZippen = document.querySelector('.btn__zipp');
 let wrap1 = document.querySelector('.wrap');
 let pushKesh = document.querySelector('.btn__kesha');
+let pushTuchka = document.querySelector('.btn__tuchka');
+
+pushTuchka.addEventListener('click', () => {
+    wrap1.classList.add ('currentScreen');
+    let tuchka = document.createElement('div');
+    tuchka.classList.add('tuschka', 'img__content');
+    wrap1.append(tuchka);
+});
 
 pushZippen.addEventListener('click', () => {
     wrap1.classList.add ('currentScreen');
