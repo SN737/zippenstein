@@ -70,8 +70,12 @@ body {
     height: 180px;
     background-image: url("./img/tuchka.png");
     background-repeat: no-repeat; 
-    
-
+}
+.aBird{
+    width:  178px;
+    height: 180px;
+    background-image: url("./img/bird.png");
+    background-repeat: no-repeat; 
 }
 
 .currentScreen {

@@ -3,6 +3,8 @@ let wrap1 = document.querySelector('.wrap');
 let pushKesh = document.querySelector('.btn__kesha');
 let pushTuchka = document.querySelector('.btn__tuchka');
 
+let clicks = 0;
+
 pushTuchka.addEventListener('click', () => {
     wrap1.classList.add ('currentScreen');
     let tuchka = document.createElement('div');
@@ -15,6 +17,7 @@ pushZippen.addEventListener('click', () => {
     let zipp = document.createElement('div');
     zipp.classList.add('zipper', 'img__content');
     wrap1.append(zipp);
+    
 });
 
 pushKesh.addEventListener('click', () => {
@@ -22,7 +25,12 @@ pushKesh.addEventListener('click', () => {
     let kesh = document.createElement('div');
     kesh.classList.add('keshenator', 'img__content');
     wrap1.append(kesh);
+    clicks= 0;
+    birdAdd ();
+    
 });
+
+
 
 const btnReset = document.querySelector('.btn__reset');
 //btnReset.addEventListener('click', console.log("очистка"));
@@ -37,5 +45,20 @@ function resetScreen() {
    }
     //wrap1.classList.remove ('currentScreen');
 }
- 
+
+function birdAdd (){
+    const keshenator = document.querySelector('.keshenator');
+    keshenator.addEventListener('click', ()=>{
+        // alert(clicks)
+        clicks++;
+        if (clicks>3){
+            keshenator.remove();
+            let bird = document.createElement('div');
+            bird.classList.add('aBird', 'img__content');
+            wrap1.append(bird);
+            clicks= 0;
+        }
+    
+    });
+}
 
