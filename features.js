@@ -1,7 +1,3 @@
-// import { tuchkaReady } from 'script2.js';
-
-// let tuchkaReadyObj = tuchkaReady();
-
 
 export function move(obj) {
 // Отключаем дефолтный DnD

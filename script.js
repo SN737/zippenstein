@@ -2,9 +2,13 @@ let pushZippen = document.querySelector('.btn__zipp');
 let wrap1 = document.querySelector('.wrap');
 let pushKesh = document.querySelector('.btn__kesha');
 let pushTuchka = document.querySelector('.btn__tuchka');
+const createNewHero =  document.querySelector('.createnewhero');
 import { move } from './features.js';
 
 
+createNewHero.addEventListener('click', ()=> {
+   new  Multhero('newHero');
+createNewHero.create});
 
 
 pushTuchka.addEventListener('click', tuchkaReady);
@@ -37,8 +41,6 @@ pushKesh.addEventListener('click', () => {
     
 });
 
-
-
 const btnReset = document.querySelector('.btn__reset');
 //btnReset.addEventListener('click', console.log("очистка"));
 btnReset.addEventListener('click', () => {
@@ -69,3 +71,19 @@ function birdAdd (){
     });
 }
 
+
+class Multhero {
+    constructor (name) {
+        this.name = name;
+    }
+    create(name){
+    wrap1.classList.add ('currentScreen');
+    name = document.createElement('div');
+    name.classList.add('zipper', 'img__content');
+    wrap1.append(name);
+    }  
+    move(name){
+        move(name);
+    }
+
+}
