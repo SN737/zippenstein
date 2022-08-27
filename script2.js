@@ -2,18 +2,20 @@ let pushZippen = document.querySelector('.btn__zipp');
 let wrap1 = document.querySelector('.wrap');
 let pushKesh = document.querySelector('.btn__kesha');
 let pushTuchka = document.querySelector('.btn__tuchka');
+import { move } from './features.js';
 
 
 
 
 pushTuchka.addEventListener('click', tuchkaReady);
 
-export function tuchkaReady() {
+function tuchkaReady() {
     wrap1.classList.add ('currentScreen');
     let tuchka = document.createElement('div');
     tuchka.classList.add('tuschka', 'img__content');
     wrap1.append(tuchka);
-    return tuchkaReadyObj = document.querySelector('.tuschka');
+    let tuchkaReady = document.querySelector('.tuschka');
+    move(tuchkaReady);
    
 };
 
