@@ -3,14 +3,19 @@ let wrap1 = document.querySelector('.wrap');
 let pushKesh = document.querySelector('.btn__kesha');
 let pushTuchka = document.querySelector('.btn__tuchka');
 
-let clicks = 0;
 
-pushTuchka.addEventListener('click', () => {
+
+
+pushTuchka.addEventListener('click', tuchkaReady);
+
+export function tuchkaReady() {
     wrap1.classList.add ('currentScreen');
     let tuchka = document.createElement('div');
     tuchka.classList.add('tuschka', 'img__content');
     wrap1.append(tuchka);
-});
+    return tuchkaReadyObj = document.querySelector('.tuschka');
+   
+};
 
 pushZippen.addEventListener('click', () => {
     wrap1.classList.add ('currentScreen');
