@@ -4,11 +4,14 @@ let pushKesh = document.querySelector('.btn__kesha');
 let pushTuchka = document.querySelector('.btn__tuchka');
 const createNewHero =  document.querySelector('.createnewhero');
 import { move } from './features.js';
+let clicks;
+
 
 
 createNewHero.addEventListener('click', ()=> {
-   new  Multhero('newHero');
-createNewHero.create});
+  let TTT =  new  Multhero('newHero');  
+TTT.create();
+});
 
 
 pushTuchka.addEventListener('click', tuchkaReady);
@@ -81,9 +84,8 @@ class Multhero {
     name = document.createElement('div');
     name.classList.add('zipper', 'img__content');
     wrap1.append(name);
-    }  
-    move(name){
-        move(name);
-    }
+    console.log(this);
+    move(name);
+    }     
 
 }
