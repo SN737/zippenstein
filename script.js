@@ -1,11 +1,34 @@
-let pushZippen = document.querySelector('.btn__zipp');
+// let pushZippen = document.querySelector('.btn__zipp');
 let wrap1 = document.querySelector('.wrap');
 let pushKesh = document.querySelector('.btn__kesha');
 let pushTuchka = document.querySelector('.btn__tuchka');
 const createNewHero =  document.querySelector('.createnewhero');
 import { move } from './features.js';
+const findBtn = document.querySelector('.btn__find');
+const input = document.querySelector('.input');
 let clicks;
 
+
+
+findBtn.addEventListener('click', findHero);
+
+function findHero(){
+    let value = input.value.toLowerCase();
+    input.value = '';
+    if (value == 'лисичка'){
+        let fox =  new  Multhero('foxy');  
+        fox.create();
+    } else if (value == 'хрю' || value == 'хрюн' || value == 'свин'){
+        let pig =  new  Multhero('pig');  
+        pig.create();
+    }else if (value =='птица' || value =='синяя птица' || value =='ангри бёрдс' || value =='angry birds'){
+        let blueBird =  new  Multhero('blue_bird');  
+        blueBird.create();
+    
+    }else {return;
+    }
+
+}
 
 
 createNewHero.addEventListener('click', ()=> {
@@ -33,13 +56,13 @@ function tuchkaReady() {
    
 };
 
-pushZippen.addEventListener('click', () => {
-    wrap1.classList.add ('currentScreen');
-    let zipp = document.createElement('div');
-    zipp.classList.add('zipper', 'img__content');
-    wrap1.append(zipp);
+// pushZippen.addEventListener('click', () => {
+//     wrap1.classList.add ('currentScreen');
+//     let zipp = document.createElement('div');
+//     zipp.classList.add('zipper', 'img__content');
+//     wrap1.append(zipp);
     
-});
+// });
 
 // pushKesh.addEventListener('click', () => {
 //     wrap1.classList.add ('currentScreen');
