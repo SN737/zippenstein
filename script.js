@@ -9,9 +9,16 @@ let clicks;
 
 
 createNewHero.addEventListener('click', ()=> {
-  let TTT =  new  Multhero('newHero');  
-TTT.create();
+  let testHero =  new  Multhero('zipper');  
+testHero.create();
 });
+
+
+pushKesh.addEventListener('click', ()=> {
+    let kesh =  new  Multhero('keshenator');  
+  kesh.create();
+  birdAdd ();
+  });
 
 
 pushTuchka.addEventListener('click', tuchkaReady);
@@ -34,15 +41,15 @@ pushZippen.addEventListener('click', () => {
     
 });
 
-pushKesh.addEventListener('click', () => {
-    wrap1.classList.add ('currentScreen');
-    let kesh = document.createElement('div');
-    kesh.classList.add('keshenator', 'img__content');
-    wrap1.append(kesh);
-    clicks= 0;
-    birdAdd ();
+// pushKesh.addEventListener('click', () => {
+//     wrap1.classList.add ('currentScreen');
+//     let kesh = document.createElement('div');
+//     kesh.classList.add('keshenator', 'img__content');
+//     wrap1.append(kesh);
+//     clicks= 0;
+//     birdAdd ();
     
-});
+// });
 
 const btnReset = document.querySelector('.btn__reset');
 //btnReset.addEventListener('click', console.log("очистка"));
@@ -81,11 +88,10 @@ class Multhero {
     }
     create(name){
     wrap1.classList.add ('currentScreen');
-    name = document.createElement('div');
-    name.classList.add('zipper', 'img__content');
+    name = document.createElement('div');    
+    name.classList.add(this.name, 'img__content');
     wrap1.append(name);
-    console.log(this);
-    move(name);
-    }     
-
+    clicks =0;    
+    move(name);    
+    }   
 }
