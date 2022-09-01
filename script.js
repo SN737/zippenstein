@@ -9,7 +9,6 @@ const input = document.querySelector('.input');
 let clicks;
 
 
-
 findBtn.addEventListener('click', findHero);
 
 function findHero(){
@@ -24,8 +23,13 @@ function findHero(){
     }else if (value =='птица' || value =='синяя птица' || value =='ангри бёрдс' || value =='angry birds'){
         let blueBird =  new  Multhero('blue_bird');  
         blueBird.create();
+
+    }else if (value =='красная птица' || value =='красный птиц' || value =='ангри бёрд красный' || value =='angry birds red'){
+        let redBird =  new  Multhero('aBird');  
+        redBird.create();
     
-    }else {return;
+    }else{
+        return;
     }
 
 }
