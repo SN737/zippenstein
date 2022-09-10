@@ -6,14 +6,17 @@ const createNewHero =  document.querySelector('.createnewhero');
 import { move } from './features.js';
 const findBtn = document.querySelector('.btn__find');
 const input = document.querySelector('.input');
+const select = document.querySelector('.select')
 let clicks;
 
 
 findBtn.addEventListener('click', findHero);
 
 function findHero(){
-    let value = input.value.toLowerCase();
-    input.value = '';
+    // let value = select.value.toLowerCase();
+    let value = select.value.toLowerCase();
+
+    // input.value = '';
     if (value == 'лисичка'){
         let fox =  new  Multhero('foxy');  
         fox.create();
